@@ -1,0 +1,241 @@
+.gallery-page {
+  background-color: #f5f5f5;
+  color: #000;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.gallery-header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 100;
+  padding: 1.25rem 1.75rem;
+}
+
+.gallery-menu-btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  width: 28px;
+  height: 28px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.gallery-menu-btn span {
+  display: block;
+  width: 100%;
+  height: 1.5px;
+  background-color: #000;
+}
+
+.gallery-nav {
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  background-color: #f5f5f5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.25s ease, visibility 0.25s ease;
+}
+
+.gallery-nav.is-open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.gallery-nav__close {
+  position: absolute;
+  top: 1.25rem;
+  right: 1.75rem;
+  background: none;
+  border: none;
+  font-size: 1.75rem;
+  line-height: 1;
+  cursor: pointer;
+  color: #000;
+}
+
+.gallery-nav__links {
+  list-style: none;
+  text-align: center;
+}
+
+.gallery-nav__links li + li {
+  margin-top: 1.25rem;
+}
+
+.gallery-nav__links a {
+  font-size: clamp(1.5rem, 4vw, 2rem);
+  text-transform: lowercase;
+  color: #000;
+}
+
+.gallery-nav__links a:hover {
+  opacity: 0.6;
+}
+
+.gallery {
+  padding-top: 4rem;
+}
+
+.gallery-group {
+  padding-bottom: 5rem;
+}
+
+.gallery-group + .gallery-group {
+  padding-top: 3rem;
+  border-top: 1px solid #ddd;
+}
+
+.gallery-group__title {
+  font-size: clamp(1.25rem, 2.5vw, 1.75rem);
+  font-weight: 400;
+  text-transform: lowercase;
+  margin-bottom: 2rem;
+  padding: 0 clamp(1.5rem, 3vw, 3rem);
+}
+
+.slideshow__info {
+  max-width: 420px;
+  min-height: 3rem;
+  margin-bottom: 2rem;
+  padding: 0 clamp(1.5rem, 3vw, 3rem);
+}
+
+.slideshow__title,
+.slideshow__year {
+  transition: opacity 0.2s ease;
+}
+
+.slideshow__info.is-updating .slideshow__title,
+.slideshow__info.is-updating .slideshow__year {
+  opacity: 0.35;
+}
+
+.slideshow__title {
+  font-style: italic;
+  margin-bottom: 0.35rem;
+}
+
+.slideshow__year {
+  margin-bottom: 0;
+}
+
+.slideshow__carousel {
+  position: relative;
+  width: 100%;
+}
+
+.slideshow__control {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  flex-shrink: 0;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #dcdcdc;
+  border: none;
+  cursor: pointer;
+  color: #000;
+  font-size: 1.1rem;
+  line-height: 1;
+  transition: background-color 0.2s ease, opacity 0.2s ease;
+}
+
+.slideshow__control[data-prev] {
+  left: clamp(0.75rem, 2vw, 1.5rem);
+}
+
+.slideshow__control[data-next] {
+  right: clamp(0.75rem, 2vw, 1.5rem);
+}
+
+.slideshow__control:hover:not(:disabled) {
+  background-color: #ccc;
+}
+
+.slideshow__control:disabled {
+  opacity: 0.35;
+  cursor: default;
+}
+
+.slideshow__scroll {
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  cursor: grab;
+}
+
+.slideshow__scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.slideshow__scroll.is-dragging {
+  cursor: grabbing;
+  user-select: none;
+}
+
+.slideshow__track {
+  display: flex;
+  align-items: center;
+  width: max-content;
+}
+
+.slideshow__slide {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+
+.slideshow__slide img,
+.slideshow__slide video {
+  display: block;
+  height: min(62vh, 640px);
+  width: auto;
+  max-width: none;
+  object-fit: contain;
+  opacity: 1;
+  transition: opacity 0.35s ease;
+}
+
+.slideshow__slide.is-next img,
+.slideshow__slide.is-next video {
+  opacity: 0.8;
+}
+
+@media (max-width: 640px) {
+  .slideshow__control {
+    width: 36px;
+    height: 36px;
+    font-size: 0.95rem;
+  }
+
+  .slideshow__control[data-prev] {
+    left: 0.5rem;
+  }
+
+  .slideshow__control[data-next] {
+    right: 0.5rem;
+  }
+
+  .slideshow__slide img,
+  .slideshow__slide video {
+    height: 50vh;
+  }
+}
