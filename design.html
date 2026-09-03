@@ -4,30 +4,38 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Design — Yuchen Shi</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/gallery.css">
 </head>
 <body class="gallery-page">
-  <header class="gallery-header">
-    <button class="gallery-menu-btn" type="button" aria-label="Open menu" data-menu-open>
-      <span></span>
-      <span></span>
-      <span></span>
-    </button>
+  <div class="subpage-spacer" data-subpage-spacer aria-hidden="true"></div>
+  <header class="subpage-header fade fade--1" data-sticky-header>
+    <div class="rule-bar">
+      <i class="rule-bar__seg rule-bar__seg--lead" aria-hidden="true"></i>
+      <span class="rule-bar__letter">d</span>
+      <i class="rule-bar__seg" aria-hidden="true"></i>
+      <span class="rule-bar__letter">e</span>
+      <i class="rule-bar__seg" aria-hidden="true"></i>
+      <span class="rule-bar__letter">s</span>
+      <i class="rule-bar__seg" aria-hidden="true"></i>
+      <span class="rule-bar__letter">i</span>
+      <i class="rule-bar__seg" aria-hidden="true"></i>
+      <span class="rule-bar__letter">g</span>
+      <i class="rule-bar__seg" aria-hidden="true"></i>
+      <span class="rule-bar__letter">n</span>
+      <i class="rule-bar__seg rule-bar__seg--grow" aria-hidden="true"></i>
+      <a href="index.html" class="rule-bar__home" aria-label="Home">
+        <img src="images/signature.png?v=2" alt="Home" class="rule-bar__signature">
+      </a>
+      <i class="rule-bar__seg rule-bar__seg--trail" aria-hidden="true"></i>
+    </div>
   </header>
 
-  <nav class="gallery-nav" data-menu aria-label="Site navigation">
-    <button class="gallery-nav__close" type="button" aria-label="Close menu" data-menu-close>&times;</button>
-    <ul class="gallery-nav__links">
-      <li><a href="index.html">home</a></li>
-      <li><a href="art.html">art</a></li>
-      <li><a href="design.html">design</a></li>
-      <li><a href="contact.html">contact</a></li>
-    </ul>
-  </nav>
-
   <main class="gallery">
-    <section class="gallery-group" data-slideshow>
+    <section class="gallery-group fade fade--2" data-slideshow>
       <h2 class="gallery-group__title">graphic design</h2>
       <div class="slideshow__info">
         <p class="slideshow__title">adam, why arial?</p>
@@ -78,7 +86,7 @@
         <button class="slideshow__control" type="button" aria-label="Next slide" data-next>&rarr;</button>
       </div></section>
 
-    <section class="gallery-group" data-slideshow>
+    <section class="gallery-group fade fade--3" data-slideshow>
       <h2 class="gallery-group__title">architecture</h2>
       <div class="slideshow__info">
         <p class="slideshow__title">the seasonal tectonics of princeton</p>
@@ -112,6 +120,7 @@
       </div></section>
   </main>
 
+  <script src="js/transition.js"></script>
   <script src="js/gallery.js"></script>
 </body>
 </html>

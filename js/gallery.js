@@ -141,32 +141,6 @@ function initSlideshows() {
   });
 }
 
-function initGalleryMenu() {
-  const menuBtn = document.querySelector("[data-menu-open]");
-  const nav = document.querySelector("[data-menu]");
-  const closeBtn = document.querySelector("[data-menu-close]");
-
-  if (!menuBtn || !nav) return;
-
-  menuBtn.addEventListener("click", () => {
-    nav.classList.add("is-open");
-    document.body.style.overflow = "hidden";
-  });
-
-  closeBtn?.addEventListener("click", () => {
-    nav.classList.remove("is-open");
-    document.body.style.overflow = "";
-  });
-
-  nav.querySelectorAll("a").forEach((link) => {
-    link.addEventListener("click", () => {
-      nav.classList.remove("is-open");
-      document.body.style.overflow = "";
-    });
-  });
-}
-
 document.addEventListener("DOMContentLoaded", () => {
   initSlideshows();
-  initGalleryMenu();
 });

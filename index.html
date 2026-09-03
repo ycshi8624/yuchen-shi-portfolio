@@ -4,34 +4,40 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Yuchen Shi</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <main class="landing">
-    <header class="landing__header">
+  <main class="landing" data-landing>
+    <header class="landing__header fade fade--1">
       <p>&ldquo;yuchen shi is a multi-media artist / designer based in princeton, nj.&rdquo;</p>
     </header>
 
-    <section class="landing__hero" aria-label="Navigation">
+    <section class="landing__hero fade fade--2" aria-label="Navigation">
       <nav class="landing__nav">
-        <a href="art.html" class="landing__nav-link">art</a>
-        <a href="design.html" class="landing__nav-link">design</a>
+        <a href="art.html" class="landing__nav-link landing__nav-link--art" data-nav-link>art</a>
+        <a href="design.html" class="landing__nav-link landing__nav-link--design" data-nav-link>design</a>
         <div class="landing__signature-wrap">
           <img
-            src="images/signature.png"
+            src="images/signature.png?v=2"
             alt="Yuchen Shi signature"
             class="landing__signature"
-            width="420"
-            height="180"
+            data-signature
+            width="680"
+            height="280"
           >
-          <a href="contact.html" class="landing__nav-link landing__nav-link--contact">contact</a>
+          <a href="contact.html" class="landing__nav-link landing__nav-link--contact" data-nav-link>contact</a>
         </div>
       </nav>
     </section>
 
-    <footer class="landing__footer">
+    <footer class="landing__footer fade fade--3">
       <p>yuchen shi is an unreliable narrator of her own practice.</p>
     </footer>
   </main>
+
+  <script src="js/transition.js"></script>
 </body>
 </html>
