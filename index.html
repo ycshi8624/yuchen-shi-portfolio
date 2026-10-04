@@ -3,41 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Yuchen Shi</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+  <title>yuchen shi</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-  <main class="landing" data-landing>
-    <header class="landing__header fade fade--1">
-      <p>&ldquo;yuchen shi is a multi-media artist / designer based in princeton, nj.&rdquo;</p>
-    </header>
-
-    <section class="landing__hero fade fade--2" aria-label="Navigation">
-      <nav class="landing__nav">
-        <a href="art.html" class="landing__nav-link landing__nav-link--art" data-nav-link>art</a>
-        <a href="design.html" class="landing__nav-link landing__nav-link--design" data-nav-link>design</a>
-        <div class="landing__signature-wrap">
-          <img
-            src="images/signature.png?v=2"
-            alt="Yuchen Shi signature"
-            class="landing__signature"
-            data-signature
-            width="680"
-            height="280"
-          >
-          <a href="contact.html" class="landing__nav-link landing__nav-link--contact" data-nav-link>contact</a>
-        </div>
-      </nav>
-    </section>
-
-    <footer class="landing__footer fade fade--3">
-      <p>yuchen shi is an unreliable narrator of her own practice.</p>
-    </footer>
-  </main>
-
-  <script src="js/transition.js"></script>
+<body class="home" data-page="home">
+  <p class="intro"><strong>yuchen shi</strong> is a designer and artist working across visual identity, publication, image-making, and space.</p>
+  <nav class="intro__nav" aria-label="Primary">
+    <button type="button" class="corner corner--info" data-info>info</button>
+    <button type="button" class="corner corner--index" data-index>index</button>
+  </nav>
+  <main class="stage" data-field></main>
+  <script src="js/catalog.js"></script>
+  <script src="js/view.js"></script>
+  <script src="js/project.js"></script>
+  <script src="js/home.js"></script>
 </body>
 </html>
