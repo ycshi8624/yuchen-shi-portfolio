@@ -314,6 +314,11 @@ const PROJECTS = [
     "text": "My identity has been fl uid, molded by the places I have been to. Growing up near the coastline contributed significantly to who I am, and this subconsciously built a complex relationship between water and me. Through this film, I want to explore the connotations of water and its parallels with my identity. This project is an interdisciplinary work, combining art with social science and interface physics. I looked into place identity, a concept in social science and urban planning concerning the significance of places for their inhabitants, and how these meanings contribute to individuals’ self-concepts. The videos of water droplets are shot with a high-speed camera and are extracted from my scientific experiments with interface physics. I combined all of the clips I filmed and the information I gained from my research into a 3D model which could be seen throughout the film, animated with Cinema 4D.",
     "media": [
       {
+        "src": "images&txt/3d/fluidscapes/cover.png",
+        "kind": "image",
+        "coverOnly": true
+      },
+      {
         "src": "https://vimeo.com/804766737",
         "kind": "video"
       }

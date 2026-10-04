@@ -40,7 +40,7 @@ function renderSheet(project, onClose) {
   if (asideBits.length) {
     const aside = document.createElement("p");
     aside.className = "sheet__aside";
-    aside.textContent = asideBits.join(" ");
+    aside.textContent = asideBits.join(" / ");
     titleLine.appendChild(aside);
   }
 
@@ -69,7 +69,7 @@ function renderSheet(project, onClose) {
   thumbs.className = "sheet__thumbs";
   gallery.append(preview, thumbs);
 
-  const media = project.media;
+  const media = project.media.filter((item) => !item.coverOnly);
   let index = 0;
   const buttons = [];
 
