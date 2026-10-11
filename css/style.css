@@ -599,6 +599,16 @@ body.is-sheet {
   font-style: normal;
 }
 
+.dossier__role > .dossier__name {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.dossier__role > span:last-child:not(.dossier__name) {
+  flex: none;
+  white-space: nowrap;
+}
+
 .dossier p {
   margin: 0 0 0.45rem;
   white-space: pre-wrap;
@@ -655,33 +665,67 @@ body.is-sheet {
 
 @media (max-width: 800px) {
   .intro {
-    padding: 3.2rem 1.2rem 0;
+    padding: 2.8rem 1.35rem 0;
     white-space: normal;
+    line-height: 1.45;
   }
 
-  .intro__nav {
-    top: 0.9rem;
-    right: 1rem;
-  }
+  .corner--info { left: 0.9rem; }
+  .corner--index { right: 0.9rem; }
 
   .stage {
     width: min(92vw, 640px);
-    height: 78vh;
-    margin-top: 2.5rem;
+    height: calc(100dvh - 8.5rem);
+    margin-top: 1.4rem;
   }
 
   .word {
-    font-size: 20px;
+    font-size: clamp(13px, 3.5vw, 18px);
     letter-spacing: 0;
+  }
+
+  .chip,
+  .mark-dot {
+    width: 13px;
+    height: 13px;
   }
 
   .sheet__head {
     grid-template-columns: 1fr;
-    row-gap: 1rem;
+    row-gap: 0.85rem;
+    padding: 1.1rem 1.15rem 1.3rem;
+  }
+
+  .sheet__titleline {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.3rem;
+  }
+
+  .sheet__info h1 {
+    line-height: 1.25;
+  }
+
+  .sheet__gallery {
+    padding: 0.6rem 1rem 2rem;
   }
 
   .sheet__preview {
-    height: 52vh;
+    height: min(48vh, 420px);
+  }
+
+  .sheet__thumbs img,
+  .sheet__thumbs video {
+    height: 46px;
+  }
+
+  .index-grid {
+    gap: 0.85rem 0.7rem;
+    padding: 0.3rem 1rem 2.2rem;
+  }
+
+  .index-grid a {
+    width: min(168px, 44vw);
   }
 
   .sheet__info h1,

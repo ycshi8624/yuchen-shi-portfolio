@@ -376,7 +376,6 @@ function openInfo() {
     roleLine("princeton university — princeton, nj", "2024–2028"),
     note("a.b. candidate, art & archaeology (practice of art)"),
     note("minors: computer science; architecture & engineering"),
-    note("gpa: 3.91"),
     roleLine("united world college of south east asia, east campus — singapore", "2020–2024"),
     heading("experience"),
     roleLine("associate director — tigergear, princeton university student agencies", "2024–present"),
