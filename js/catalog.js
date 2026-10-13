@@ -21,6 +21,11 @@ const PROJECTS = [
     "text": "last night, i became fixated on finding a very specific pair of ballet flats — square-toed, studded, polka-dotted. i moved through dozens of online stores i already knew well, but instead of actually seeing the shoes in front of me, i was filtering them against a pre-formed image, forcing each pair into the outline of something that didn’t quite exist. nothing matched. the “perfect” shoe remained absent.\n\ni gradually realized that this ideal wasn’t a real object but a kind of negative space — a hollow form that organizes desire without ever being filled. in this sense, the search itself becomes more important than the object. consumption operates not through satisfaction but through the endless circulation of images that defer it. the shoe is never simply a shoe but an image to be approximated.\n\nat the same time, this fixation resembles what sigmund freud describes as fetishism: desire attaches itself to a substitute object that both reveals and conceals an underlying lack. the imagined shoe functions as such a fetish: it is a stand-in that stabilizes desire while ensuring it can never be resolved. as trends shift, the form of this absence remains, ready to receive the next object, the next obsession. the mold persists, even as its contents endlessly change.",
     "media": [
       {
+        "src": "images&txt/painting/add to cart/cover.JPG",
+        "kind": "image",
+        "coverOnly": true
+      },
+      {
         "src": "images&txt/painting/add to cart/\"add to cart\" : 2026 : acrylic on canvas : 12 x 18 in.JPG",
         "kind": "image"
       }
