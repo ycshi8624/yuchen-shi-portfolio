@@ -807,11 +807,11 @@ const PROJECTS = [
     "text": "Responding to Moholy-Nagy’s conception of typography as a synthesis of vision and communication, this piece treats text as a spatial and graphic material. Geometric forms disrupt linear reading, transforming language into a visual field. The result is a composition where meaning emerges through both reading and seeing.",
     "media": [
       {
-        "src": "images&txt/editorial/Typesetting for The New Typography by László Moholy-Nagy : 2024/cover.jpg",
+        "src": "images&txt/editorial/Typesetting for The New Typography by László Moholy-Nagy : 2024/cover.jpg",
         "kind": "image"
       },
       {
-        "src": "images&txt/editorial/Typesetting for The New Typography by László Moholy-Nagy : 2024/1.png",
+        "src": "images&txt/editorial/Typesetting for The New Typography by László Moholy-Nagy : 2024/1.png",
         "kind": "image"
       }
     ]
